@@ -1,0 +1,26 @@
+Code Book:
+
+This code book describes the variables of the data set, and any transformations performed to clean up the data set.The 
+overall script for this project can be roughly summarized as follows:
+
+           1.The training and test set are are first comnied into one data set using concatination.
+           2. Extracting the measurements on the mean and standard deviation for each sample. 
+           3.Samples with the same activity_name and subject_id are reduced to the corresponding mean value
+           4. Then we finally create an independent tidy data set which we would be saving as the text file.
+ 
+About the Data set:
+
+The studies were carried out on a group of 30 participants ranging in age from 19 to 48 years old. Each participant wore a smartphone (Samsung Galaxy S II) 
+around their waist and did six activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING). They collected the 
+3-axial linear acceleration and 3-axial angular velocity at a confluence using its integrated accelerometer and gyroscope at a constant rate of 50Hz. 
+
+The sensor data (accelerometer and gyroscope) were pre-processed with noise filters before being sampled in 2.56 sec fixed-width sliding windows with 50 percent overlap (128 readings/window). 
+A Butterworth low-pass filter was used to separate the sensor acceleration signal into body acceleration and gravity, which had both gravitational and body motion components.
+Because it is assumed that the gravitational force has only low frequency components, a filter with a cutoff frequency of 0.3 Hz was utilised. Calculating variables from the time and frequency domain 
+yielded a vector of characteristics from each frame.
+
+
+The final output dataframe with all the features is shown in 1.png 2.png and 3.png uploaded in this repo.
+
+
+
